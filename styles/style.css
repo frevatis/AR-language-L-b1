@@ -597,5 +597,11 @@ p, h1, h2, h3, div {
 .socials a:hover {
     color: #4ade80;
 }
+.phone-btm{
+    font-size: 20px;
+    color:white;
+    background-color:('black');
+    width:50px;
+}
 
 
