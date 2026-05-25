@@ -22,16 +22,18 @@
                 <a href="#services">Услуги</a>
                 <a href="#why">Опыт</a>
                 <a href="#tel">Контакты</a>
-                
             </div>
             <div class="logo">
                 <h2>AR Language Lab</h2>
             </div>
-         <div class="phone">
-    <i class="fa-solid fa-phone"></i>
-    <span>+86 199 696 350 46 (WeChat)</span>
-</div>
-    <div class="hero-content" id = "menu">
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+86 199 696 350 46 (WeChat)</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-content" id="menu">
         <div class="info">
             <p>Добро пожаловать в <span>AR Language Lab</span></p>
             <p>— пространство, где китайский язык становится не просто навыком,</p>
@@ -127,7 +129,6 @@
     <footer class="footer">
         <div class="footer-inner" id="tel">
             <p>📞 <strong>Телефон:</strong> +86 199 696 350 46 (WeChat)</p>
-       
             <p>📧 <strong>Email:</strong> roza_china_trade@mail.ru</p>
             <p>© 2025 AR Language Lab. Все права защищены.</p>
         </div>
@@ -135,14 +136,12 @@
 </div>
 
 <script>
-    // Появление блоков "О компании" и "Услуги" (сразу)
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.about-section, .predlogai').forEach(card => {
             card.classList.add('vasib');
         });
     });
 
-    // Появление блоков "Китай", "Опыт", "Отзывы" при прокрутке
     window.addEventListener('scroll', () => {
         document.querySelectorAll('.china, .bt, .reviews-container').forEach(el => {
             if (el.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -151,28 +150,12 @@
         });
     });
 
-    
-    // Сбрасываем прокрутку наверх, но ждём анимации
     window.addEventListener('load', function() {
         setTimeout(function() {
             window.scrollTo(0, 0);
         }, 100);
     });
-  
-    document.getElementById('showPhone').addEventListener('click', function() {
-    let phoneDiv = document.getElementById('phoneNumber');
-    if (phoneDiv.style.display === 'none' || phoneDiv.style.display === '') {
-        phoneDiv.style.display = 'inline-block';
-        this.innerHTML = '<i class="fas fa-check"></i> Показан';
-    }
-});
-
 </script>
-            
-        
-    
-
-
 
 </body>
 </html>
