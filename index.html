@@ -18,10 +18,10 @@
     <header class="header">
         <div class="header-inner">
             <div class="nav-links">
-                <a href="#">Главное меню</a>
-                <a href="#">Услуги</a>
-                <a href="#">Опыт</a>
-                <a href="#">Контакты</a>
+                <a href="#menu">Главное меню</a>
+                <a href="#services">Услуги</a>
+                <a href="#why">Опыт</a>
+                <a href="#tel">Контакты</a>
                 
             </div>
             <div class="logo">
@@ -152,6 +152,15 @@
             }
         });
     });
+
+    
+    // Сбрасываем прокрутку наверх, но ждём анимации
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 100);
+    });
+
 </script>
             
         
