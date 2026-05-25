@@ -444,7 +444,10 @@ body, html {
         gap: 15px;
         padding: 15px 5%;
     }
-    
+    a{
+        color: white;
+        text-decoration: none;
+    }
     .nav-links {
         display: flex;
         flex-wrap: wrap;
