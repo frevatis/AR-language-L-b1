@@ -263,8 +263,6 @@ body, html {
 .bt {
     position: relative;
     z-index: 3;
-     position: relative;
-    z-index: 3;
     opacity: 0;
     transform: translateY(30px);
     transition: 1s;
@@ -273,8 +271,6 @@ body, html {
     opacity: 1;
     transform: translateY(0);
 }
-
-
 
 .tys {
     max-width: 1300px;
@@ -408,20 +404,7 @@ body, html {
         transform: scale(1.05);
         color: #a5a5a5;
     }
-    .photo,
-    .about-text,
-    .fotq,
-    .pred,
-    .china,
-    .ctext,
-    .got,
-    .kamin,
-    .test{
-        transition: 0.3s;
-    }
-
-
-
+    
     .photo:hover,
     .about-text:hover,
     .fotq:hover,
@@ -430,11 +413,10 @@ body, html {
     .ctext:hover,
     .got:hover,
     .kamin:hover,
-    .test:hover{
-       
+    .test:hover {
         transform: scale(1.02);
+        transition: 0.3s;
     }
-
 }
 
 /* ===== АДАПТИВ ДЛЯ ТЕЛЕФОНОВ ===== */
@@ -444,7 +426,7 @@ body, html {
         gap: 15px;
         padding: 15px 5%;
     }
-    a{
+    a {
         color: white;
         text-decoration: none;
     }
@@ -454,32 +436,25 @@ body, html {
         justify-content: center;
         gap: 20px;
     }
-    
     .nav-links a {
         margin: 0;
         font-size: 16px;
     }
-    
     .logo h2 {
         font-size: 24px;
     }
-    
     .phone {
         font-size: 14px;
     }
-    
     .hero-content {
         padding-top: 220px;
     }
-    
     .info p {
         font-size: 18px;
     }
-    
     .about-section, .predlogai, .china, .bt {
         padding: 40px 5%;
     }
-    
     .about-container,
     .predlog,
     .chainik,
@@ -487,36 +462,32 @@ body, html {
         flex-direction: column;
         gap: 30px;
     }
-    
     .photo, .fotq, .about-text, .pred,
     .got, .ctext, .kamin, .test {
         min-width: auto;
         padding: 25px;
     }
-    
     .kamin, .got {
         min-width: auto;
         height: auto;
         min-height: 320px;
     }
-    
     .kamin img, .got img {
         max-height: 280px;
         object-fit: contain;
     }
-    
     .about-text h2, .pred h2, .ctext h2 {
         font-size: 24px;
     }
-    
     .about-text p, .pred p, .ctext p, .test p {
         font-size: 16px;
     }
-    
     .test p:first-child {
         font-size: 20px;
     }
 }
+
+/* ===== КУРСОРЫ ===== */
 .nav-links a,
 .phone span,
 .test p,
@@ -528,18 +499,16 @@ button,
 a {
     cursor: pointer;
 }
-
-/* Обычный текст — не меняем курсор */
 p, h1, h2, h3, div {
     cursor: default;
 }
+
 /* ===== БЛОК ОТЗЫВОВ ===== */
 .reviews {
     position: relative;
     z-index: 3;
     padding: 60px 5%;
 }
-
 .reviews-container {
     max-width: 1300px;
     margin: 0 auto;
@@ -548,14 +517,13 @@ p, h1, h2, h3, div {
     flex-wrap: wrap;
     justify-content: center;
     opacity: 0;
-    transform: translateY(30);
+    transform: translateY(30px);
     transition: 1s;
 }
-.reviews-container.visible{
+.reviews-container.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 .review-card {
     flex: 1;
     min-width: 280px;
@@ -567,13 +535,10 @@ p, h1, h2, h3, div {
     text-align: center;
     transition: 0.3s;
 }
-
 .review-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
 }
-
-/* Фото пользователя */
 .review-avatar {
     width: 80px;
     height: 80px;
@@ -582,96 +547,19 @@ p, h1, h2, h3, div {
     margin-bottom: 20px;
     border: 2px solid #4ade80;
 }
-
-/* Текст отзыва */
 .review-card p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
     color: white;
 }
-
 .review-author {
     font-weight: bold;
     color: #4ade80 !important;
     margin-top: 10px;
 }
-/* ===== ФОРМА ОБРАТНОЙ СВЯЗИ ===== */
-.contact-form {
-    position: relative;
-    z-index: 3;
-    padding: 60px 5%;
-}
 
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    color: white;
-}
-
-.form-container h2 {
-    color: #4ade80;
-    margin-bottom: 15px;
-    font-size: 32px;
-}
-
-.form-container p {
-    margin-bottom: 30px;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px 18px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    color: white;
-    font-size: 16px;
-    font-family: inherit;
-    transition: 0.3s;
-    box-sizing: border-box;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #4ade80;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 14px;
-    background: #4ade80;
-    border: none;
-    border-radius: 12px;
-    color: #000;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.submit-btn:hover {
-    background: #2ecc71;
-    transform: translateY(-2px);
-}
-
+/* ===== БЛОК С КНОПКАМИ СВЯЗИ (ВМЕСТО ФОРМЫ) ===== */
 .contact-links {
     position: relative;
     z-index: 3;
