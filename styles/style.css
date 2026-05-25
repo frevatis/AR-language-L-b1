@@ -12,7 +12,6 @@ body, html {
     color: white;
 }
 
-/* ====================== ГЛАВНЫЙ БЛОК ====================== */
 .hero {
     position: relative;
     width: 100%;
@@ -40,7 +39,6 @@ body, html {
     z-index: 2;
 }
 
-/* ====================== МЕНЮ ====================== */
 .header {
     position: fixed;
     top: 0;
@@ -70,7 +68,9 @@ body, html {
     transition: 0.3s;
 }
 
-
+.nav-links a:hover {
+    color: #4ade80;
+}
 
 .logo h2 {
     color: white;
@@ -78,55 +78,6 @@ body, html {
     font-weight: 700;
 }
 
-.phone-wrapper {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.stylish-phone-btn {
-    background: linear-gradient(135deg, #4ade80, #2ecc71);
-    border: none;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.stylish-phone-btn i {
-    font-size: 20px;
-    transition: 0.3s;
-}
-
-.stylish-phone-btn:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-    gap: 15px;
-}
-
-.stylish-phone-btn:hover i {
-    transform: rotate(10deg);
-}
-
-.hidden-phone-number {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px);
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    color: white;
-    border: 1px solid rgba(255,255,255,0.2);
-}
 .phone {
     display: flex;
     align-items: center;
@@ -153,7 +104,7 @@ body, html {
     color: #4ade80;
     font-size: 14px;
 }
-/* ====================== ПРИВЕТСТВИЕ ====================== */
+
 .hero-content {
     position: relative;
     z-index: 3;
@@ -177,7 +128,6 @@ body, html {
     font-weight: 700;
 }
 
-/* ====================== БЛОКИ ====================== */
 .predlogai {
     position: relative;
     z-index: 3;
@@ -185,7 +135,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.predlogai.vasib{
+.predlogai.vasib {
     opacity: 1;
     transform: translateY(0);
 }
@@ -196,7 +146,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.about-section.vasib{
+.about-section.vasib {
     opacity: 1;
     transform: translateY(0);
 }
@@ -211,7 +161,6 @@ body, html {
     justify-content: center;
 }
 
-/* Стеклянные блоки */
 .photo, .fotq, .about-text, .pred {
     background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(16px);
@@ -223,7 +172,6 @@ body, html {
     min-width: 320px;
 }
 
-/* Фото */
 .photo img {
     width: 100%;
     border-radius: 16px;
@@ -238,7 +186,6 @@ body, html {
     display: block;
 }
 
-/* Текст внутри блоков */
 .about-text h2, .pred h2 {
     color: #4ade80;
     margin-bottom: 25px;
@@ -252,7 +199,6 @@ body, html {
     margin-bottom: 14px;
 }
 
-/* ===== БЛОК CHINA ===== */
 .china {
     position: relative;
     z-index: 3;
@@ -260,7 +206,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.china.visible{
+.china.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -324,7 +270,6 @@ body, html {
     margin-bottom: 15px;
 }
 
-/* ===== БЛОК "ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ" ===== */
 .bt {
     position: relative;
     z-index: 3;
@@ -332,7 +277,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.bt.visible{
+.bt.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -395,7 +340,6 @@ body, html {
     margin-bottom: 25px;
 }
 
-/* ===== ВЫРАВНИВАНИЕ ===== */
 .about-container,
 .predlog,
 .chainik,
@@ -425,7 +369,6 @@ body, html {
     object-fit: cover;
 }
 
-/* ===== ПОДВАЛ ===== */
 .footer {
     position: relative;
     z-index: 3;
@@ -448,7 +391,6 @@ body, html {
     color: white;
 }
 
-/* ===== УВЕЛИЧЕНИЕ ПРИ НАВЕДЕНИИ (ТОЛЬКО ПК) ===== */
 @media (min-width: 769px) {
     .nav-links a,
     .phone span,
@@ -484,7 +426,6 @@ body, html {
     }
 }
 
-/* ===== АДАПТИВ ДЛЯ ТЕЛЕФОНОВ ===== */
 @media (max-width: 768px) {
     .header-inner {
         flex-direction: column;
@@ -552,7 +493,6 @@ body, html {
     }
 }
 
-/* ===== КУРСОРЫ ===== */
 .nav-links a,
 .phone span,
 .test p,
@@ -568,7 +508,6 @@ p, h1, h2, h3, div {
     cursor: default;
 }
 
-/* ===== БЛОК ОТЗЫВОВ ===== */
 .reviews {
     position: relative;
     z-index: 3;
@@ -622,67 +561,4 @@ p, h1, h2, h3, div {
     font-weight: bold;
     color: #4ade80 !important;
     margin-top: 10px;
-}
-
-/* ===== БЛОК С КНОПКАМИ СВЯЗИ (ВМЕСТО ФОРМЫ) ===== */
-.contact-links {
-    position: relative;
-    z-index: 3;
-    padding: 60px 5%;
-}
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-}
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 30px;
-}
-.phone-btn {
-    background: linear-gradient(135deg, #4ade80, #2ecc71);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: 0.3s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    white-space: nowrap;
-}
-
-.phone-btn i {
-    font-size: 16px;
-}
-
-.phone-btn:hover {
-    transform: scale(1.02);
-    gap: 10px;
-}
-
-.phone-number-hidden {
-    display: none;
-    margin-top: 15px;
-    padding: 8px 16px;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px);
-    border-radius: 40px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid rgba(255,255,255,0.2);
 }
