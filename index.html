@@ -150,18 +150,25 @@
             }
         });
     });
-    /Принудительная прокрутка наверх при загрузке страницы
-    if (window.location.hash === "") {
-        window.scrollTo(0, 0);
-    } else {
-        // Если есть якорь в URL, прокручиваем к нему
+    /Принудительная прокрутка наверх при загрузке <script>
+    // Плавная прокрутка только если есть якорь в URL
+    if (window.location.hash) {
         setTimeout(() => {
             const target = document.querySelector(window.location.hash);
             if (target) {
                 target.scrollIntoView({ behavior: "smooth" });
             }
+        }, 500); // ждём полсекунды, чтобы анимации успели сработать
+    } else {
+        // Если якоря нет — плавно уходим наверх, но не ломаем анимации
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
         }, 100);
     }
+</script>  
+            
+        
+    
 
 </script>
 
