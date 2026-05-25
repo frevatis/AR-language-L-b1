@@ -12,6 +12,7 @@ body, html {
     color: white;
 }
 
+/* ====================== ГЛАВНЫЙ БЛОК ====================== */
 .hero {
     position: relative;
     width: 100%;
@@ -39,6 +40,7 @@ body, html {
     z-index: 2;
 }
 
+/* ====================== МЕНЮ ====================== */
 .header {
     position: fixed;
     top: 0;
@@ -105,6 +107,7 @@ body, html {
     font-size: 14px;
 }
 
+/* ====================== ПРИВЕТСТВИЕ ====================== */
 .hero-content {
     position: relative;
     z-index: 3;
@@ -128,6 +131,7 @@ body, html {
     font-weight: 700;
 }
 
+/* ====================== БЛОКИ ====================== */
 .predlogai {
     position: relative;
     z-index: 3;
@@ -135,7 +139,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.predlogai.vasib {
+.predlogai.vasib{
     opacity: 1;
     transform: translateY(0);
 }
@@ -146,7 +150,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.about-section.vasib {
+.about-section.vasib{
     opacity: 1;
     transform: translateY(0);
 }
@@ -161,6 +165,7 @@ body, html {
     justify-content: center;
 }
 
+/* Стеклянные блоки */
 .photo, .fotq, .about-text, .pred {
     background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(16px);
@@ -172,6 +177,7 @@ body, html {
     min-width: 320px;
 }
 
+/* Фото */
 .photo img {
     width: 100%;
     border-radius: 16px;
@@ -186,6 +192,7 @@ body, html {
     display: block;
 }
 
+/* Текст внутри блоков */
 .about-text h2, .pred h2 {
     color: #4ade80;
     margin-bottom: 25px;
@@ -199,6 +206,7 @@ body, html {
     margin-bottom: 14px;
 }
 
+/* ===== БЛОК CHINA ===== */
 .china {
     position: relative;
     z-index: 3;
@@ -206,7 +214,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.china.visible {
+.china.visible{
     opacity: 1;
     transform: translateY(0);
 }
@@ -270,6 +278,7 @@ body, html {
     margin-bottom: 15px;
 }
 
+/* ===== БЛОК "ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ" ===== */
 .bt {
     position: relative;
     z-index: 3;
@@ -277,7 +286,7 @@ body, html {
     transform: translateY(30px);
     transition: 1s;
 }
-.bt.visible {
+.bt.visible{
     opacity: 1;
     transform: translateY(0);
 }
@@ -340,6 +349,7 @@ body, html {
     margin-bottom: 25px;
 }
 
+/* ===== ВЫРАВНИВАНИЕ ===== */
 .about-container,
 .predlog,
 .chainik,
@@ -369,6 +379,7 @@ body, html {
     object-fit: cover;
 }
 
+/* ===== ПОДВАЛ ===== */
 .footer {
     position: relative;
     z-index: 3;
@@ -391,6 +402,7 @@ body, html {
     color: white;
 }
 
+/* ===== УВЕЛИЧЕНИЕ ПРИ НАВЕДЕНИИ (ТОЛЬКО ПК) ===== */
 @media (min-width: 769px) {
     .nav-links a,
     .phone span,
@@ -416,92 +428,52 @@ body, html {
     .about-text:hover,
     .fotq:hover,
     .pred:hover,
-   
+    .china:hover,
     .ctext:hover,
     .got:hover,
     .kamin:hover,
     .test:hover {
         transform: scale(1.02);
-        
-        
-    }
-}
- .photo,
-    .about-text,
-    .fotq,
-    .pred,
-    
-    .ctext,
-    .got,
-    .kamin,
-    .test {
-        
-        transition: 0.5s;
+        transition: 0.3s;
     }
 }
 
-
+/* ===== АДАПТИВ ДЛЯ ТЕЛЕФОНОВ ===== */
 @media (max-width: 768px) {
     .header-inner {
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
         padding: 15px 5%;
     }
-    
+    a {
+        color: white;
+        text-decoration: none;
+    }
     .nav-links {
-        order: 1;
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        margin-bottom: 5px;
     }
-    
     .nav-links a {
         margin: 0;
+        font-size: 16px;
+    }
+    .logo h2 {
+        font-size: 24px;
+    }
+    .phone {
         font-size: 14px;
     }
-    
-    .logo {
-        order: 2;
-        text-align: center;
-    }
-    
-    .logo h2 {
-        font-size: 22px;
-    }
-    
-    .phone {
-        order: 3;
-        display: inline-flex;
-        justify-content: center;
-        font-size: 12px;
-        padding: 5px 12px;
-        margin-top: 5px;
-    }
-    
-    .phone span {
-        font-size: 11px;
-        white-space: nowrap;
-    }
-    
-    .phone i {
-        font-size: 12px;
-    }
-    
     .hero-content {
         padding-top: 220px;
     }
-    
     .info p {
         font-size: 18px;
     }
-    
     .about-section, .predlogai, .china, .bt {
         padding: 40px 5%;
     }
-    
     .about-container,
     .predlog,
     .chainik,
@@ -509,37 +481,32 @@ body, html {
         flex-direction: column;
         gap: 30px;
     }
-    
     .photo, .fotq, .about-text, .pred,
     .got, .ctext, .kamin, .test {
         min-width: auto;
         padding: 25px;
     }
-    
     .kamin, .got {
         min-width: auto;
         height: auto;
         min-height: 320px;
     }
-    
     .kamin img, .got img {
         max-height: 280px;
         object-fit: contain;
     }
-    
     .about-text h2, .pred h2, .ctext h2 {
         font-size: 24px;
     }
-    
     .about-text p, .pred p, .ctext p, .test p {
         font-size: 16px;
     }
-    
     .test p:first-child {
         font-size: 20px;
     }
 }
 
+/* ===== КУРСОРЫ ===== */
 .nav-links a,
 .phone span,
 .test p,
@@ -555,6 +522,7 @@ p, h1, h2, h3, div {
     cursor: default;
 }
 
+/* ===== БЛОК ОТЗЫВОВ ===== */
 .reviews {
     position: relative;
     z-index: 3;
