@@ -165,6 +165,13 @@
     document.getElementById('phoneNumber').style.display = 'inline';
     this.style.display = 'none';
 };
+    document.getElementById('showPhone').addEventListener('click', function() {
+    let phoneDiv = document.getElementById('phoneNumber');
+    if (phoneDiv.style.display === 'none' || phoneDiv.style.display === '') {
+        phoneDiv.style.display = 'inline-block';
+        this.innerHTML = '<i class="fas fa-check"></i> Показан';
+    }
+});
 
 </script>
             
