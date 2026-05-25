@@ -444,69 +444,64 @@ body, html {
 @media (max-width: 768px) {
     .header-inner {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         padding: 15px 5%;
-    }
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-     .header-inner {
-        flex-direction: column;
-        gap: 10px;
-        padding: 12px 5%;
     }
     
     .nav-links {
         order: 1;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .nav-links a {
+        margin: 0;
+        font-size: 14px;
     }
     
     .logo {
         order: 2;
+        text-align: center;
+    }
+    
+    .logo h2 {
+        font-size: 22px;
     }
     
     .phone {
         order: 3;
+        display: inline-flex;
+        justify-content: center;
         font-size: 12px;
-        padding: 4px 12px;
+        padding: 5px 12px;
         margin-top: 5px;
     }
     
     .phone span {
         font-size: 11px;
+        white-space: nowrap;
     }
     
     .phone i {
         font-size: 12px;
     }
-}
-    .nav-links a {
-        margin: 0;
-        font-size: 16px;
-    }
-    .logo h2 {
-        font-size: 24px;
-    }
-    .phone {
-        font-size: 14px;
-    }
+    
     .hero-content {
         padding-top: 220px;
     }
+    
     .info p {
         font-size: 18px;
     }
+    
     .about-section, .predlogai, .china, .bt {
         padding: 40px 5%;
     }
+    
     .about-container,
     .predlog,
     .chainik,
@@ -514,26 +509,32 @@ body, html {
         flex-direction: column;
         gap: 30px;
     }
+    
     .photo, .fotq, .about-text, .pred,
     .got, .ctext, .kamin, .test {
         min-width: auto;
         padding: 25px;
     }
+    
     .kamin, .got {
         min-width: auto;
         height: auto;
         min-height: 320px;
     }
+    
     .kamin img, .got img {
         max-height: 280px;
         object-fit: contain;
     }
+    
     .about-text h2, .pred h2, .ctext h2 {
         font-size: 24px;
     }
+    
     .about-text p, .pred p, .ctext p, .test p {
         font-size: 16px;
     }
+    
     .test p:first-child {
         font-size: 20px;
     }
