@@ -587,8 +587,4 @@ p, h1, h2, h3, div {
     font-weight: bold;
     transition: 0.3s;
 }
-.whatsapp { background: #25D366; color: #000; }
-.telegram { background: #0088cc; color: #fff; }
-.email { background: #ea4335; color: #fff; }
-.phone { background: #4ade80; color: #000; }
-.contact-btn:hover { transform: scale(1.05); opacity: 0.9; }
+
