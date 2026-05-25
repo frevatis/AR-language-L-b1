@@ -18,10 +18,10 @@
     <header class="header">
         <div class="header-inner">
             <div class="nav-links">
-                <a href="#menu">Главное меню</a>
-                <a href="#services">Услуги</a>
-                <a href="#why">Опыт</a>
-                <a href="#tel">Контакты</a>
+                <a href="#">Главное меню</a>
+                <a href="#">Услуги</a>
+                <a href="#">Опыт</a>
+                <a href="#">Контакты</a>
                 
             </div>
             <div class="logo">
@@ -137,14 +137,22 @@
 </div>
 
 <script>
+    // Появление блоков "О компании" и "Услуги" (сразу)
     document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.about-section, .predlogai').forEach(card => {
             card.classList.add('vasib');
         });
     });
 
-
-</script>  
+    // Появление блоков "Китай", "Опыт", "Отзывы" при прокрутке
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('.china, .bt, .reviews-container').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                el.classList.add('visible');
+            }
+        });
+    });
+</script>
             
         
     
