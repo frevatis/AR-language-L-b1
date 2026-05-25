@@ -621,27 +621,42 @@ p, h1, h2, h3, div {
     justify-content: center;
     margin-top: 30px;
 }
-.contact-btn {
-    padding: 12px 24px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.socials a {
+.phone-btn {
+    background: linear-gradient(135deg, #4ade80, #2ecc71);
+    border: none;
     color: white;
-    margin: 0 10px;
-    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     transition: 0.3s;
-}
-.socials a:hover {
-    color: #4ade80;
-}
-.phone-btm{
-    font-size: 20px;
-    color:white;
-    background-color:('black');
-    width:50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    white-space: nowrap;
 }
 
+.phone-btn i {
+    font-size: 16px;
+}
 
+.phone-btn:hover {
+    transform: scale(1.02);
+    gap: 10px;
+}
+
+.phone-number-hidden {
+    display: none;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 40px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
