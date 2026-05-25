@@ -422,9 +422,23 @@ body, html {
     .kamin:hover,
     .test:hover {
         transform: scale(1.02);
-        transition: 0.3s;
+        
     }
 }
+ .photo:hover,
+    .about-text,
+    .fotq,
+    .pred,
+    .china,
+    .ctext,
+    .got,
+    .kaminr,
+    .test {
+        
+        transition: 0.5s;
+    }
+}
+
 
 @media (max-width: 768px) {
     .header-inner {
