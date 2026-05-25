@@ -588,28 +588,5 @@ p, h1, h2, h3, div {
     font-weight: bold;
     transition: 0.3s;
 }
-/* Убираем зелёный фон у телефона в шапке */
-.phone span {
-    background: none !important;
-    color: white !important;
-}
 
-.phone span:hover {
-    background: none !important;
-    color: #a5a5a5 !important;
-}
-
-/* Если номер телефона обёрнут в ссылку */
-.phone a,
-.footer a {
-    background: none !important;
-    color: white !important;
-    text-decoration: none;
-}
-
-.phone a,
-.footer a {
-    background: none !important;
-    color: #a5a5a5 !important;
-}
 
