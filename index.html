@@ -161,10 +161,7 @@
             window.scrollTo(0, 0);
         }, 100);
     });
-    document.getElementById('showPhone').onclick = function() {
-    document.getElementById('phoneNumber').style.display = 'inline';
-    this.style.display = 'none';
-};
+  
     document.getElementById('showPhone').addEventListener('click', function() {
     let phoneDiv = document.getElementById('phoneNumber');
     if (phoneDiv.style.display === 'none' || phoneDiv.style.display === '') {
